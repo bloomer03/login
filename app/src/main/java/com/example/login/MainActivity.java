@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
     public void login(View v) {
         tryid = eId.getText().toString();
         trypw = ePassword.getText().toString();
-        if (id == tryid) {
-            if (pw == trypw) {
+        if (tryid.equals(id)) {
+            if (trypw.equals(pw)) {
                 eTextView.setText(tryid + "\n" + trypw + "\n" + "로그인 되었습니다.");
             } else {
                 eTextView.setText(tryid + "\n" + trypw + "\n" + "패스워드가 틀렸습니다.");
